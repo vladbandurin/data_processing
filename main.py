@@ -90,7 +90,8 @@ def main(args):
 
 
 if __name__=='__main__':
-    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser = argparse.ArgumentParser(description='This script preprocess the dataset.\n'
+                                                 'Preprocessing include applying z-score normalization and adding some new features')
 
     parser.add_argument('--train_path', action='store', type=str, required=False)
     parser.add_argument('--test_path', action='store', type=str, required=False)
